@@ -1,0 +1,15 @@
+[{
+    "name": "JSLintError",
+    "column": 0,
+    "line": 0,
+    "code": "use_strict",
+    "a": "function",
+    "message": "This function needs a \"use strict\" pragma."
+}, {
+    "name": "JSLintError",
+    "column": 8,
+    "line": 1,
+    "code": "unused_a",
+    "a": "a",
+    "message": "Unused 'a'."
+}]
