@@ -6,9 +6,10 @@ var fs = require('fs');
 var content = fs.readFileSync('../input/target3.js', 'utf-8');
 
 var result = jslint(content, {
+    devel: true,
     browser: true,
     single: true,
     white: true
-}, ['require', 'G_STATIC_PATH', 'window', 'angular']);// 传入全局变量
+}, ['require', 'G_STATIC_PATH', 'window', 'angular']); // 传入全局变量
 
 fs.writeFileSync('../result/jslint_result.json', JSON.stringify(result.warnings), 'utf-8');

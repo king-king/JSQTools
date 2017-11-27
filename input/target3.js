@@ -1,4 +1,3 @@
-(() => {
-    var a = new Date();
-    console.log(a.getDate())
-})();
+var foo = (t) => t - 1;
+var f = foo(10); // TypeError: Foo is not a constructor
+console.log(f);
