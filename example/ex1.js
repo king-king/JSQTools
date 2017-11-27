@@ -1,9 +1,9 @@
 var jslint = require('../JSLint/jslint');
 var fs = require('fs');
 
-var content = fs.readFileSync('../input/global1.js', 'utf-8');
+// var content = fs.readFileSync('../input/global1.js', 'utf-8');
 
-// var content = fs.readFileSync('../input/target1.js', 'utf-8');
+var content = fs.readFileSync('../input/target3.js', 'utf-8');
 
 var result = jslint(content, {
     browser: true,

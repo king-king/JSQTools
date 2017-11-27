@@ -1,29 +1,31 @@
 [{
     "name": "JSLintError",
-    "column": 14,
-    "line": 16,
-    "code": "unused_a",
-    "a": "demodata",
-    "message": "Unused 'demodata'."
+    "column": 4,
+    "line": 0,
+    "code": "expected_a_b",
+    "a": "function",
+    "b": "=>",
+    "message": "Expected 'function' and instead saw '=>'."
 }, {
     "name": "JSLintError",
-    "column": 32,
-    "line": 16,
+    "column": 8,
+    "line": 1,
     "code": "unused_a",
-    "a": "controller",
-    "message": "Unused 'controller'."
+    "a": "a",
+    "message": "Unused 'a'."
 }, {
     "name": "JSLintError",
-    "column": 44,
-    "line": 16,
-    "code": "unused_a",
-    "a": "service",
-    "message": "Unused 'service'."
+    "column": 28,
+    "line": 2,
+    "code": "expected_a_b",
+    "a": ";",
+    "b": "}",
+    "message": "Expected ';' and instead saw '}'."
 }, {
     "name": "JSLintError",
-    "column": 53,
-    "line": 16,
-    "code": "unused_a",
-    "a": "directive",
-    "message": "Unused 'directive'."
+    "column": 2,
+    "line": 3,
+    "code": "unexpected_a",
+    "a": "(",
+    "message": "Unexpected '('."
 }]
