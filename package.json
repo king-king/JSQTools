@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/king-king/JSQTools/issues"
   },
-  "homepage": "https://github.com/king-king/JSQTools#readme"
+  "homepage": "https://github.com/king-king/JSQTools#readme",
+  "devDependencies": {
+    "jshint": "^2.9.5"
+  }
 }
