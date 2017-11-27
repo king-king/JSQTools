@@ -1,6 +1,4 @@
-/*global
-require,G_STATIC_PATH,window,angular
-*/
+
 
 require.config({
     baseUrl: "/" + ("undefined" === typeof G_STATIC_PATH ? 'src' : G_STATIC_PATH) + "/static/js/singleAnalysis/singleProDetail",
