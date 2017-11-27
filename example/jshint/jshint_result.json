@@ -1,0 +1,15 @@
+{
+    "functions": [],
+    "options": {
+        "undef": true,
+        "esversion": 6,
+        "indent": 4,
+        "maxerr": 50
+    },
+    "globals": ["a", "b"],
+    "unused": [{
+        "name": "b",
+        "line": 2,
+        "character": 5
+    }]
+}
