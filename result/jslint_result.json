@@ -1,15 +1,29 @@
 [{
     "name": "JSLintError",
-    "column": 0,
-    "line": 0,
-    "code": "use_strict",
-    "a": "function",
-    "message": "This function needs a \"use strict\" pragma."
+    "column": 14,
+    "line": 18,
+    "code": "unused_a",
+    "a": "demodata",
+    "message": "Unused 'demodata'."
 }, {
     "name": "JSLintError",
-    "column": 8,
-    "line": 1,
+    "column": 32,
+    "line": 18,
     "code": "unused_a",
-    "a": "a",
-    "message": "Unused 'a'."
+    "a": "controller",
+    "message": "Unused 'controller'."
+}, {
+    "name": "JSLintError",
+    "column": 44,
+    "line": 18,
+    "code": "unused_a",
+    "a": "service",
+    "message": "Unused 'service'."
+}, {
+    "name": "JSLintError",
+    "column": 53,
+    "line": 18,
+    "code": "unused_a",
+    "a": "directive",
+    "message": "Unused 'directive'."
 }]
