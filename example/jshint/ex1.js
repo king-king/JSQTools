@@ -1,6 +1,6 @@
 var jshint = require('jshint').JSHINT;
 var fs = require('fs');
-var content = fs.readFileSync('../../input/target4.js', 'utf-8');
+var content = fs.readFileSync('../../input/target5.js', 'utf-8');
 
 jshint(content, {
     undef: true,

@@ -1,15 +1,38 @@
 {
-    "functions": [],
+    "functions": [{
+        "name": "test",
+        "param": ["name"],
+        "line": 2,
+        "character": 15,
+        "last": 4,
+        "lastcharacter": 2,
+        "metrics": {
+            "complexity": 1,
+            "parameters": 1,
+            "statements": 1
+        }
+    }],
     "options": {
         "undef": true,
         "esversion": 6,
         "indent": 4,
         "maxerr": 50
     },
-    "globals": ["a", "b"],
+    "errors": [{
+        "id": "(error)",
+        "raw": "'{a}' is already defined.",
+        "code": "W004",
+        "evidence": "    var name = name;",
+        "line": 3,
+        "character": 9,
+        "scope": "(main)",
+        "a": "name",
+        "reason": "'name' is already defined."
+    }],
+    "globals": ["test"],
     "unused": [{
-        "name": "b",
+        "name": "test",
         "line": 2,
-        "character": 5
+        "character": 10
     }]
 }
