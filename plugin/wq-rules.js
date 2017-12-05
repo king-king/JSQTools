@@ -31,12 +31,14 @@ module.exports = {
                 // console.log(sourceCode.getText(node));
             },
             IfStatement: function (node) {
-                // var sourceCode = context.getSourceCode();
-                // console.log(sourceCode.getText(node));
-            },
-            XMLEscape: function (node) {
                 var sourceCode = context.getSourceCode();
                 console.log(sourceCode.getText(node));
+                console.log(sourceCode.getFirstToken(node));
+                console.log(sourceCode.getLastToken(node));
+            },
+            XMLEscape: function (node) {
+                // var sourceCode = context.getSourceCode();
+                // console.log(sourceCode.getText(node));
             }
         }
     }
