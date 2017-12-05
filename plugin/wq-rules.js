@@ -24,6 +24,7 @@ module.exports = {
                 var sourceCode = context.getSourceCode();
                 // console.log(sourceCode.getText(node));
                 result.push(context.getTokens(node));
+                console.log(node.elements)
                 fs.writeFileSync('./result.json', JSON.stringify(result), 'utf-8')
             },
             CatchClause: function (node) {
@@ -33,9 +34,9 @@ module.exports = {
             IfStatement: function (node) {
                 // console.log(node.test)
                 var sourceCode = context.getSourceCode();
-                console.log('"' + sourceCode.getText(node.test) + '"');
-                console.log(node.test.type);
-                console.log(node.test.operator);
+                // console.log('"' + sourceCode.getText(node.test) + '"');
+                // console.log(node.test.type);
+                // console.log(node.test.operator);
                 // console.log(sourceCode.getText(node.alternate));
                 // console.log(sourceCode.getFirstToken(node));
                 // console.log(sourceCode.getLastToken(node));
