@@ -20,11 +20,23 @@ module.exports = {
                 // console.log(context.getTokens());
             },
             ArrayExpression: function (node) {
-                console.log(++num);
+                // console.log(++num);
                 var sourceCode = context.getSourceCode();
-                console.log(sourceCode.getText(node));
+                // console.log(sourceCode.getText(node));
                 result.push(context.getTokens(node));
                 fs.writeFileSync('./result.json', JSON.stringify(result), 'utf-8')
+            },
+            CatchClause: function (node) {
+                // var sourceCode = context.getSourceCode();
+                // console.log(sourceCode.getText(node));
+            },
+            IfStatement: function (node) {
+                // var sourceCode = context.getSourceCode();
+                // console.log(sourceCode.getText(node));
+            },
+            XMLEscape: function (node) {
+                var sourceCode = context.getSourceCode();
+                console.log(sourceCode.getText(node));
             }
         }
     }
