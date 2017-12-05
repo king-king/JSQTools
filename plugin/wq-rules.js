@@ -31,10 +31,14 @@ module.exports = {
                 // console.log(sourceCode.getText(node));
             },
             IfStatement: function (node) {
+                // console.log(node.test)
                 var sourceCode = context.getSourceCode();
-                console.log(sourceCode.getText(node));
-                console.log(sourceCode.getFirstToken(node));
-                console.log(sourceCode.getLastToken(node));
+                console.log('"' + sourceCode.getText(node.test) + '"');
+                console.log(node.test.type);
+                console.log(node.test.operator);
+                // console.log(sourceCode.getText(node.alternate));
+                // console.log(sourceCode.getFirstToken(node));
+                // console.log(sourceCode.getLastToken(node));
             },
             XMLEscape: function (node) {
                 // var sourceCode = context.getSourceCode();
