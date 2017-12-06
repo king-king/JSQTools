@@ -18,9 +18,10 @@ try {
 } catch (e) {
     console.log(e);
 }
-if (  a.length === 3  ) {
+if (a.length === 3) {
     var n = a.concat(a);
     var lf = n * n * n;
+    var ter = lf > 10 ? val() : 'no';
 }
 
 var xml = '<div class="name">fdsfs</div>';

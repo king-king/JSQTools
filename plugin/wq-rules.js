@@ -24,7 +24,7 @@ module.exports = {
                 var sourceCode = context.getSourceCode();
                 // console.log(sourceCode.getText(node));
                 result.push(context.getTokens(node));
-                console.log(node.elements)
+                // console.log(node.elements)
                 fs.writeFileSync('./result.json', JSON.stringify(result), 'utf-8')
             },
             CatchClause: function (node) {
@@ -44,6 +44,12 @@ module.exports = {
             XMLEscape: function (node) {
                 // var sourceCode = context.getSourceCode();
                 // console.log(sourceCode.getText(node));
+            },
+            ConditionalExpression: function (node) {
+                var sourceCode = context.getSourceCode();
+                console.log('"' + sourceCode.getText(node.test) + '"');
+                console.log('"' + sourceCode.getText(node.consequent) + '"');
+                console.log('"' + sourceCode.getText(node.alternate) + '"');
             }
         }
     }
