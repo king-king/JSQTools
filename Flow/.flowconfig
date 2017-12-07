@@ -1,0 +1,9 @@
+[ignore]
+#.*/input.js
+[include]
+
+[libs]
+
+[lints]
+
+[options]
