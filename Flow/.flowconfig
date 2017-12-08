@@ -1,6 +1,6 @@
 [ignore]
 # .*/input.js
- target/.*\.js
+# .*/target/index\.js
 .*/target/singleProDetail/service\.js
 
 [include]

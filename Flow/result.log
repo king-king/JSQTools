@@ -1,8 +1,1 @@
-Error: target/index.js:19
- 19:         data.gridData = [];
-                  ^^^^^^^^ property `gridData`. Property not found in
- 19:         data.gridData = [];
-             ^^^^ object literal
-
-
-Found 1 error
+Found 0 errors
