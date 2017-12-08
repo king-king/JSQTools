@@ -1,5 +1,8 @@
 [ignore]
-#.*/input.js
+# .*/input.js
+ target/.*\.js
+.*/target/singleProDetail/service\.js
+
 [include]
 
 [libs]
