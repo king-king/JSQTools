@@ -1,7 +1,7 @@
 [ignore]
 # .*/input.js
 # .*/target/index\.js
-.*/target/singleProDetail/service\.js
+ .*/target/singleProDetail/service\.js
 
 [include]
 

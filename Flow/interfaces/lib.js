@@ -21,5 +21,6 @@ declare function define(any,any): any;
 
 declare class Jquery {
     extend(any, any,any): any;
+    (any):any;
 }
 declare var $: Jquery;
