@@ -14,42 +14,13 @@ module.exports = {
                     node: node,
                     message: 'Expected consistent spacing'
                 });
-                // context.report(node, 'Expected consistent spacing')
-                // console.log(JSON.stringify(context.getTokens(node)));
-                // fs.writeFileSync('./result.json', JSON.stringify(context.getTokens(node)), 'utf-8')
-                // console.log(context.getTokens());
             },
-            ArrayExpression: function (node) {
-                // console.log(++num);
-                var sourceCode = context.getSourceCode();
-                // console.log(sourceCode.getText(node));
-                result.push(context.getTokens(node));
-                // console.log(node.elements)
+            Program: function (node) {
+                var scope = context.getScope();
+                scope.variables.forEach(function (va) {
+                    console.log(va.name);
+                });
                 fs.writeFileSync('./result.json', JSON.stringify(result), 'utf-8')
-            },
-            CatchClause: function (node) {
-                // var sourceCode = context.getSourceCode();
-                // console.log(sourceCode.getText(node));
-            },
-            IfStatement: function (node) {
-                // console.log(node.test)
-                var sourceCode = context.getSourceCode();
-                // console.log('"' + sourceCode.getText(node.test) + '"');
-                // console.log(node.test.type);
-                // console.log(node.test.operator);
-                // console.log(sourceCode.getText(node.alternate));
-                // console.log(sourceCode.getFirstToken(node));
-                // console.log(sourceCode.getLastToken(node));
-            },
-            XMLEscape: function (node) {
-                // var sourceCode = context.getSourceCode();
-                // console.log(sourceCode.getText(node));
-            },
-            ConditionalExpression: function (node) {
-                var sourceCode = context.getSourceCode();
-                console.log('"' + sourceCode.getText(node.test) + '"');
-                console.log('"' + sourceCode.getText(node.consequent) + '"');
-                console.log('"' + sourceCode.getText(node.alternate) + '"');
             }
         }
     }
