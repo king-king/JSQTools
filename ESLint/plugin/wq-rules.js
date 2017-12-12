@@ -17,10 +17,32 @@ module.exports = {
             },
             Program: function (node) {
                 var scope = context.getScope();
-                scope.variables.forEach(function (va) {
-                    console.log(va.name);
-                });
                 fs.writeFileSync('./result.json', JSON.stringify(result), 'utf-8')
+
+                var variables = scope.variables;
+                variables.forEach(function (variable, i) {
+                    // console.log('variable:' + variable.name);
+                    var references = variable.references;
+                    references.forEach(function (ref) {
+                        let target = ref.identifier.parent;
+                        console.log('variable ' + i + ' : ' + variable.name);
+                        console.log('type : ' + target.type);
+                    });
+                });
+
+            },
+            "Program:exit": function () {
+                // var scope = context.getScope();
+                // var variables = scope.variables;
+                // variables.forEach(function (variable, i) {
+                //     // console.log('variable:' + variable.name);
+                //     var references = variable.references;
+                //     references.forEach(function (ref) {
+                //         let target = ref.identifier.parent;
+                //         console.log('variable ' + i + ' : ' + variable.name);
+                //         console.log('type : ' + target.type);
+                //     });
+                // });
             }
         }
     }
